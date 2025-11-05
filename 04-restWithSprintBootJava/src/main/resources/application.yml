@@ -1,1 +1,19 @@
-spring.application.name=restWithSprintBootJava
+spring:
+  application:
+    name: restWithSprintBootJava
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/restWithSprintBootJava?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: Admin123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+    show-sql: false
+    open-in-view: false
+logging:
+  level:
+    root: WARN
+#    br.com.eulucasm: DEBUG
